@@ -1,0 +1,81 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Dashboard v3</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v3</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid starter-template">
+        <div class="col-md-6 offset-md-3 ">
+
+          <h3>{{title}}</h3>
+          
+          <form [formGroup]="formUser" (ngSubmit)="enviarDatos()">
+            <div class="form-group">
+                    <label for="">Nombres</label>
+                    <input class="form-control" type="text" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"/>
+                    <div  class="invalid-feedback">
+                      Por favor ingresa los nombres
+                    </div>
+                  </div>
+
+                <div class="form-group">
+                    <label for="">Apellidos</label>
+                    <input class="form-control" type="text" formControlName="last_name" [ngClass]="{ 'is-invalid': submitted && f['last_name'].errors }"/>
+                    <div  class="invalid-feedback">
+                      Por favor ingresa los apellidos
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Fecha de nacimiento</label>
+                    <input class="form-control" type="datetime-local" formControlName="date" [ngClass]="{ 'is-invalid': submitted && f['date'].errors }">
+                    <div  class="invalid-feedback">
+                      Por favor ingrese la fecha de nacimiento
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Correo</label>
+                    <input class="form-control" type="email" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f['email'].errors }">
+                    <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                      <div *ngIf="f['email'].errors['required']">El correo es requerido</div>
+                      <div *ngIf="f['email'].errors['email']">El correo es invalido</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Telefono</label>
+                    <input class="form-control" type="number" formControlName="phone" [ngClass]="{ 'is-invalid': submitted && f['phone'].errors }">
+                    <div *ngIf="submitted && f['phone'].errors" class="invalid-feedback">
+                      <div *ngIf="f['phone'].errors['required']">Username is required</div>
+                      <div *ngIf="f['phone'].errors['pattern']">
+                        Debe contener 10 caraxteres
+                      </div>
+                     
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-success" type="submit">GUARDAR</button>
+                    <button class="btn btn-primary" type="button">CANCELAR</button>
+                </div>
+            </form>
+            
+        </div>
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+</div>

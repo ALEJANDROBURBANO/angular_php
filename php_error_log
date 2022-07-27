@@ -1,0 +1,32 @@
+[25-May-2022 04:39:40 Europe/Berlin] PHP Warning:  require_once(models/connection.php): failed to open stream: No such file or directory in C:\xampp\htdocs\contable\service\index.php on line 11
+[25-May-2022 04:39:40 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'models/connection.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\contable\service\index.php on line 11
+[25-May-2022 04:41:46 Europe/Berlin] PHP Parse error:  syntax error, unexpected ';', expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp\htdocs\contable\service\models\connection.php on line 23
+[25-May-2022 05:00:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined class constant 'FETC_CLASS' in C:\xampp\htdocs\contable\service\models\get.model.php:15
+Stack trace:
+#0 C:\xampp\htdocs\contable\service\controllers\get.controller.php(10): GetModel::getData('a')
+#1 C:\xampp\htdocs\contable\service\routes\services\get.php(7): GetController::getData('a')
+#2 C:\xampp\htdocs\contable\service\routes\routes.php(29): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\contable\service\controllers\routes.controller.php(6): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\contable\service\index.php(14): RoutesController->index()
+#5 {main}
+  thrown in C:\xampp\htdocs\contable\service\models\get.model.php on line 15
+[25-May-2022 05:00:53 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 05:00:53 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 05:01:47 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 05:01:47 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 05:10:53 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 05:10:53 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 05:29:03 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 05:29:03 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 05:29:20 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 05:29:20 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 05:30:47 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 05:30:47 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 15:38:45 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 15:38:45 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 15:50:16 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 15:50:16 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 15:52:05 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 15:52:05 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 15:53:27 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
+[25-May-2022 15:53:27 Europe/Berlin] PHP Notice:  Undefined variable: json in C:\xampp\htdocs\contable\service\routes\routes.php on line 72
